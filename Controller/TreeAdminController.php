@@ -26,7 +26,7 @@ class TreeAdminController extends CRUDController
                 return $preResponse;
             }
 
-            return $this->render(
+            return $this->renderWithExtraParams(
                 'RedCodeTreeBundle:CRUD:tree.html.twig',
                 [
                     'action' => 'list',
